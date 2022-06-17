@@ -1,8 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
+:root{
+	--strFontSize:       20px;
+	--strTextColor:      #ffffff;
+	--strTitleColor:     #ffffff;;
+
+	--strFuncLightColor: #ffffff;
+	--strFuncShadeColor: #000000;
+	--strLinkColor:      #0000FF;
+	--strVLinkColor:     #0000CC;
+	
+	--strNavBarColor:    #0B9781;
+	--strNavLightColor:  #0B9781;
+	--strNavShadeColor:  #ffffff;
+	--strNavTextColor:   #fafafa;
+	
+	--strExBGColor:      #0B9781;
+}
+
+.NavButton {
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 3em;
+    font-family: 'VT323';
+	
+	border-left-color: var(--strNavLightColor);
+
+	border-top-color: var(--strNavLightColor);
+
+	border-right-color: var(--strNavShadeColor);
+
+	border-bottom-color: var(--strNavShadeColor); 
+
+	background-color: var(--strNavBarColor);
+    background-color: var(--strExBGColor);
+
+	color: var(--strNavTextColor);
+
+	border-width: 1pt;
+
+	cursor: pointer;
+		
+	box-shadow: 0.1em 0.1em 0.1em var(--strNavShadeColor);
+
+	margin-left: 50px;
+}
+
+.NavButton:active {
+	box-shadow: none;
+}
+
+.NavButton:hover{
+	zoom: 130%;
+}
+
+
 
 .game-board{
     width: 100%;
@@ -12,6 +70,29 @@
     position: relative;
     overflow: hidden;
     background: linear-gradient(#7fcae7, #73b6d1, rgb(247, 244, 244), #1cd40b);
+}
+.Voltar-Home{
+    position: absolute;
+    bottom: 520px;
+    padding-left: 1000px;
+    right: 10px;
+    padding-right: -200px
+    
+}
+.Reloading{
+    position: absolute;
+    bottom: 520px;
+    padding-left: 1000px;
+    right: 100px;
+    padding-right: -200px
+    
+}
+.Home-p{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    padding-left: 800px;
+
 }
 
 .pipe{
